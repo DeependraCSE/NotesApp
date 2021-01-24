@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         firebaseAnalytics = Firebase.analytics
+
         supportFragmentManager.addOnBackStackChangedListener {
             val backStackCount = supportFragmentManager.backStackEntryCount
             if(backStackCount > 0){
@@ -25,7 +26,6 @@ class MainActivity : AppCompatActivity() {
                 supportActionBar!!.setDisplayHomeAsUpEnabled(false);
             }
         }
-
         LoadHomeFragment()
     }
 
