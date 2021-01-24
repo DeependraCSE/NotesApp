@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/standard_margin_padding"
+    android:paddingRight="@dimen/standard_margin_padding"
+    android:scrollbars="none"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/tv_style"
+            android:minHeight="0dp"
+            android:text="@string/about_app_title"
+            android:layout_marginTop="@dimen/standard_margin_padding"
+            android:layout_marginBottom="@dimen/half_margin_padding"
+            android:textStyle="bold"/>
+
+        <TextView
+            style="@style/tv_style"
+            android:text="@string/about_app_text"/>
+
+        <TextView
+            style="@style/tv_style"
+            android:minHeight="0dp"
+            android:text="@string/current_app_Version"
+            android:layout_marginTop="@dimen/standard_margin_padding"
+            android:layout_marginBottom="@dimen/half_margin_padding"
+            android:textStyle="bold"/>
+
+        <TextView
+            style="@style/tv_style"
+            android:minHeight="0dp"
+            android:id="@+id/tv_app_virsion"/>
+
+        <TextView
+            style="@style/tv_style"
+            android:minHeight="0dp"
+            android:text="@string/about_author_title"
+            android:layout_marginTop="@dimen/standard_margin_padding"
+            android:layout_marginBottom="@dimen/half_margin_padding"
+            android:textStyle="bold"/>
+
+        <TextView
+            style="@style/tv_style"
+            android:text="@string/about_author_text"/>
+
+        <Button
+            style="@style/btn_style"
+            android:layout_marginTop="@dimen/standard_margin_padding"
+            android:layout_marginBottom="@dimen/half_margin_padding"
+            android:text="Send Feedback"
+            android:textAllCaps="false"
+            android:id="@+id/btn_feedback"/>
+
+    </LinearLayout>
+</ScrollView>

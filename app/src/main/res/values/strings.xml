@@ -1,0 +1,20 @@
+<resources>
+    <!--<string name="app_name">Notes</string>-->
+    <string name="app_name">Notes</string>
+    <string name="title">Title</string>
+    <string name="notes">Notes</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="submit">Submit</string>
+    <string name="password_notes">We haven\'t any provision of recover password so, please make it carefully.</string>
+    <string name="password">Password</string>
+    <string name="str_share_app">Please Install Notes, It Is Awesome</string>
+
+    <string name="about_app_title">About App</string>
+    <string name="about_app_text">This application is for creating notes with title. In this application there are two type of notes. \n1. Public. \n2. Private. \nPublic notes are visible all the time while private notes can be seen by entering the correct password in menu section. \nUser can delete or edit Notes whenever they want. \nAlso user can add image by using camera after creating notes. \nWe are using user\'s devices\' storage to store notes and image so that it is available only in user\'s device. \n\nSuggestion: Please remember your password,we don\'t have any provision to recover passwords.</string>
+
+    <string name="about_author_title">About Author</string>
+    <string name="about_author_text">I am passionate software developer having experience in Mobile application development. Developing mobile applications is my hobby. New frameworks/technologies interests me a lot. \nYour feedback is highly appreciated. \nThank You Very Much</string>
+
+    <string name="current_app_Version">Installed App Version</string>
+</resources>

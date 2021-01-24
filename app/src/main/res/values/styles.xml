@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="tv_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?actionBarSize</item>
+        <item name="android:textSize">@dimen/et_text_size</item>
+        <item name="android:textColor">@color/et_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="tv_small_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?actionBarSize</item>
+        <item name="android:textSize">@dimen/et_small_text_size</item>
+        <item name="android:textColor">@color/et_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="btn_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?actionBarSize</item>
+        <item name="android:textSize">@dimen/et_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/standard_margin_padding</item>
+        <item name="android:background">@drawable/btn_bg</item>
+    </style>
+
+    <style name="et_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?actionBarSize</item>
+        <item name="android:textSize">@dimen/et_text_size</item>
+        <item name="android:textColor">@color/et_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/standard_margin_padding</item>
+        <item name="android:layout_marginTop">@dimen/half_margin_padding</item>
+        <item name="android:background">@drawable/et_bg</item>
+    </style>
+
+    <style name="multiline_et_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/et_text_size</item>
+        <item name="android:textColor">@color/et_text_color</item>
+        <item name="android:padding">@dimen/standard_margin_padding</item>
+        <item name="android:layout_marginTop">@dimen/half_margin_padding</item>
+        <item name="android:background">@drawable/et_bg</item>
+        <item name="android:lines">50</item>
+        <item name="android:minLines">6</item>
+        <item name="android:gravity">top|left</item>
+        <item name="android:maxLines">50</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+</resources>

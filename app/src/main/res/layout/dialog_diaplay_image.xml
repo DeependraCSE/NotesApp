@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:minHeight="?actionBarSize"
+        android:layout_height="wrap_content"
+        android:background="#85000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/standard_margin_padding"
+        android:paddingRight="@dimen/standard_margin_padding"
+        android:id="@+id/ll_option">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_back"
+            app:srcCompat="@drawable/ic_arrow_back"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/standard_margin_padding"
+            android:layout_weight="1">
+            <TextView
+                style="@style/tv_style"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/tv_title"
+                android:maxLines="1"
+                android:minHeight="0dp"/>
+            <TextView
+                style="@style/tv_small_style"
+                android:textColor="@color/white"
+                android:id="@+id/tv_sub_title"
+                android:maxLines="1"
+                android:minHeight="0dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_delete"
+            android:layout_marginRight="@dimen/standard_margin_padding"
+            app:srcCompat="@drawable/ic_delete"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin_padding"
+            android:id="@+id/iv_save_to_gallery"
+            app:srcCompat="@drawable/ic_file_download"/>
+
+    </LinearLayout>
+</FrameLayout>

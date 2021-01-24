@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/page_bg"
+    android:fillViewport="true"
+    android:padding="@dimen/half_margin_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?actionBarSize"
+                android:gravity="center_vertical"
+                android:background="@drawable/et_bg">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:id="@+id/sp_type"/>
+            </LinearLayout>
+
+            <EditText
+                style="@style/et_style"
+                android:hint="@string/title"
+                android:id="@+id/et_title"/>
+
+            <EditText
+                style="@style/multiline_et_style"
+                android:inputType="textMultiLine"
+                android:hint="@string/notes"
+                android:id="@+id/et_notes"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/recyclerView"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="@dimen/half_margin_padding"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
