@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         firebaseAnalytics = Firebase.analytics
 
+        
         supportFragmentManager.addOnBackStackChangedListener {
             val backStackCount = supportFragmentManager.backStackEntryCount
             if(backStackCount > 0){
